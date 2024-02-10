@@ -35,9 +35,11 @@ listlength = int(input("Enter the range of list : "))
 for i in range(0,listlength):
     usrinput = int(input(F"Enter the {i} value of list: "))
     list.append(usrinput)
+
 print(f"list = {list}")
 print(f"maximum value of list : {max(list)}")
 print(f"minimum value of list : {min(list)}")
+
 
 
 
