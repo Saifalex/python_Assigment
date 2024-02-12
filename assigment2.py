@@ -60,5 +60,4 @@ remaining_days = days % 365
 weeks = remaining_days // 7
 remaining_days = remaining_days % 7
 
-
 print(f"given {days} days is equal to {years} years {weeks} weeks {remaining_days} days")
