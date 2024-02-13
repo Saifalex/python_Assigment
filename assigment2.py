@@ -27,7 +27,7 @@ if userinput % 2 == 0:
 else:
     print("it is an odd number")
 
-# Given a list of numbers, find a maximum and minimum values
+# 4 Given a list of numbers, find a maximum and minimum values
 
 list = []
 listlength = int(input("Enter the range of list : "))
@@ -40,7 +40,7 @@ print(f"list = {list}")
 print(f"maximum value of list : {max(list)}")
 print(f"minimum value of list : {min(list)}")
 
-#5. Create a function to check if a given string is a palindrome
+# #5. Create a function to check if a given string is a palindrome
 userletter = input("Enter a palindrome word: ")
 letter = ""
 for i in userletter:
@@ -51,13 +51,31 @@ if userletter == letter:
 else:
     print(userletter == letter)
 
-# how to calculate given number of days into years, weeks and days?
+# 6 how to calculate given number of days into years, weeks and days?
+try:
+    days = int(input("Enter the no days: "))
+    years = days // 365
+    remaining_days = days % 365
+    weeks = remaining_days // 7
+    remaining_days = remaining_days % 7
 
-days = int(input("Enter the no days: "))
+    print(f"given {days} days is equal to {years} years {weeks} weeks {remaining_days} days")
 
-years = days // 365
-remaining_days = days % 365
-weeks = remaining_days // 7
-remaining_days = remaining_days % 7
+except ValueError:
+     print("please enter integer value: ")
+#7 given list of integers find positive number
 
-print(f"given {days} days is equal to {years} years {weeks} weeks {remaining_days} days")
+list = []
+positive_list =[]
+listlength = int(input("Enter the range of list : "))
+
+for i in range(0,listlength):
+    usrinput = int(input(F"Enter the {i} value of list : "))
+    list.append(usrinput)
+    if usrinput > 0:
+        positive_list.append(usrinput)
+sum = sum(positive_list)
+
+print(f"given list = {list}")
+print(f"positive number list {positive_list}")
+print(f"sum of all positive numbers: {sum}")
